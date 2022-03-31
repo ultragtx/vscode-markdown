@@ -22,6 +22,7 @@
     "config.list.indentationSize.enumDescriptions.adaptive": "コンテキストに応じたインデント幅を使用します。**サブ項目をその親の項目に左揃えで配置**させます。例：\n\n```markdown\n- 親項目\n  - サブ項目\n\n1. 親項目\n   1. サブ項目\n\n10. マーカーが長い親項目\n    1. サブ項目\n```",
     "config.list.indentationSize.enumDescriptions.inherit": "現在のドキュメントに設定されているタブのサイズを使用します（ステータスバーを参照）。例（`tabSize: 4`）：\n\n```markdown\n- 親項目\n    - サブ項目\n\n1. 親項目\n    1. サブ項目\n\n10. マーカーが長い親項目\n    1. サブ項目\n```",
     "config.math.enabled": "基本的な数式のサポートを有効化（KaTeXを使用）",
+    "config.music.enabled": "楽譜のサポートを有効化（abcjsを使用）",
     "config.orderedList.autoRenumber.description": "順序付きリストマーカーの自動修正",
     "config.orderedList.marker.description": "順序付きリストのマーカー",
     "config.orderedList.marker.enumDescriptions.one": "順序付きリストのマーカーとして、常に `1.` を使用します。",

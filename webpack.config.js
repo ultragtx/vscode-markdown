@@ -71,6 +71,7 @@ const Config_Base = {
     },
     externals: {
         vscode: "commonjs vscode", // It is only present in the VS Code extension hosts.
+        canvas: 'util', // a trick to solve `Can't resolve 'canvas'`: https://github.com/jsdom/jsdom/issues/2508#issuecomment-777387562
     },
     devtool: "nosources-source-map",
 };

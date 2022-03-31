@@ -23,6 +23,7 @@ export interface IConfigurationKeyTypeMap {
     "list.indentationSize": "adaptive" | "inherit";
 
     "math.enabled": boolean;
+    "music.enabled": boolean;
 
     "orderedList.autoRenumber": boolean;
     "orderedList.marker": "one" | "ordered";
