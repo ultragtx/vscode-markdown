@@ -4,7 +4,7 @@
     "description": "%ext.description%",
     "icon": "images/Markdown-mark.png",
     "version": "3.5.1",
-    "publisher": "yzhang",
+    "publisher": "ultragtx",
     "engines": {
         "vscode": "^1.72.0"
     },
@@ -17,11 +17,11 @@
         "markdown"
     ],
     "bugs": {
-        "url": "https://github.com/yzhang-gh/vscode-markdown/issues"
+        "url": "https://github.com/ultragtx/vscode-markdown/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/yzhang-gh/vscode-markdown"
+        "url": "https://github.com/ultragtx/vscode-markdown"
     },
     "license": "MIT",
     "activationEvents": [
