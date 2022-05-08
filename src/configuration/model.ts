@@ -24,6 +24,7 @@ export interface IConfigurationKeyTypeMap {
 
     "math.enabled": boolean;
     "music.enabled": boolean;
+    "furigana.enabled": boolean;
 
     "orderedList.autoRenumber": boolean;
     "orderedList.marker": "one" | "ordered";

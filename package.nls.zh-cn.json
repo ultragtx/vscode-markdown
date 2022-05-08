@@ -25,6 +25,7 @@
     "config.list.toggle.candidate-markers.description": "可选的列表标记，调整时将循环使用这些标记",
     "config.math.enabled": "启用基本的数学支持（由 KaTeX 提供）。",
     "config.music.enabled": "启用乐谱支持（由 abcjs 提供）",
+    "config.furigana.enabled": "启用注音假名支持 (由 iltrof/furigana-markdown-it 提供).",
     "config.orderedList.autoRenumber.description": "自动更正有序列表的标号。",
     "config.orderedList.marker.description": "有序列表标记。",
     "config.orderedList.marker.enumDescriptions.one": "总是使用 `1.` 作为有序列表标记。",

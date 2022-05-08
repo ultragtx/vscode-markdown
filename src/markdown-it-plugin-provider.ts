@@ -2,6 +2,7 @@ import type { KatexOptions } from "katex";
 import MarkdownIt = require("markdown-it");
 import { configManager } from "./configuration/manager";
 import abcjs_plugin from "./markdown-it-ext/abcjs";
+import furigana = require("furigana-markdown-it");
 import { config } from "./nls";
 
 const katexOptions: KatexOptions = { throwOnError: false };
@@ -30,6 +31,10 @@ export function extendMarkdownIt(md: MarkdownIt): MarkdownIt {
 
     if (configManager.get("music.enabled")) {
         md.use(abcjs_plugin, {test: 1});
+    }
+
+    if (configManager.get("furigana.enabled")) {
+        md.use(furigana());
     }
 
     return md;

@@ -372,6 +372,11 @@
                     "default": true,
                     "description": "%config.music.enabled%"
                 },
+                "markdown.extension.furigana.enabled": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "%config.furigana.enabled%"
+                },
                 "markdown.extension.orderedList.autoRenumber": {
                     "type": "boolean",
                     "default": true,
@@ -617,8 +622,10 @@
     },
     "dependencies": {
         "@neilsustc/markdown-it-katex": "^1.0.0",
+        "@types/furigana-markdown-it": "^1.0.1",
         "abcjs": "^6.0.2",
         "entities": "^3.0.1",
+        "furigana-markdown-it": "^1.0.3",
         "grapheme-splitter": "^1.0.4",
         "highlight.js": "^11.5.1",
         "image-size": "^0.9.3",
