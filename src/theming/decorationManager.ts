@@ -6,6 +6,7 @@ import type IDisposable from "../IDisposable";
 import { isMdDocument } from "../util/generic";
 import { DecorationClass, decorationClassConfigMap, decorationStyles } from "./constant";
 import decorationWorkerRegistry from "./decorationWorkerRegistry";
+import { apply_chatlog_decorations } from "../markdown-it-ext/chat-log";
 
 /**
  * Represents a set of decoration ranges.
@@ -298,6 +299,10 @@ class DecorationManager implements IDecorationManager {
             }
 
             const results = task.result!;
+
+            if (configManager.get("chatlog.enabled")) {
+                apply_chatlog_decorations(document, editor, this._decorationHandles);
+            }
 
             for (const { ranges, target } of results) {
                 let handle = this._decorationHandles.get(target);

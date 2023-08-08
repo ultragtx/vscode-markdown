@@ -26,6 +26,7 @@
     "config.math.enabled": "Enable basic math support (Powered by KaTeX).",
     "config.music.enabled": "Enable music notation support (Powered by abcjs).",
     "config.furigana.enabled": "Enable furigana support (Powered by iltrof/furigana-markdown-it).",
+    "config.chatlog.enabled": "Enbable chat log for chat bot conversations.",
     "config.orderedList.autoRenumber.description": "Auto fix ordered list markers.",
     "config.orderedList.marker.description": "Ordered list marker.",
     "config.orderedList.marker.enumDescriptions.one": "Always use `1.` as ordered list marker.",

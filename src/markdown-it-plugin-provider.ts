@@ -2,6 +2,7 @@ import type { KatexOptions } from "katex";
 import MarkdownIt = require("markdown-it");
 import { configManager } from "./configuration/manager";
 import abcjs_plugin from "./markdown-it-ext/abcjs";
+import chat_log_plugin from "./markdown-it-ext/chat-log";
 import furigana = require("furigana-markdown-it");
 import { config } from "./nls";
 
@@ -35,6 +36,10 @@ export function extendMarkdownIt(md: MarkdownIt): MarkdownIt {
 
     if (configManager.get("furigana.enabled")) {
         md.use(furigana());
+    }
+
+    if (configManager.get("chatlog.enabled")) {
+        md.use(chat_log_plugin);
     }
 
     return md;

@@ -377,6 +377,11 @@
                     "default": true,
                     "description": "%config.furigana.enabled%"
                 },
+                "markdown.extension.chatlog.enabled": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "%config.chatlog.enabled%"
+                },
                 "markdown.extension.orderedList.autoRenumber": {
                     "type": "boolean",
                     "default": true,
