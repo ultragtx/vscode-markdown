@@ -6,7 +6,7 @@ require('jsdom-global')();
 
 // refer: https://github.com/traPtitech/markdown-it-katex/blob/master/index.js
 
-function music_block(state, start, end, silent){
+function music_block(state: any, start: any, end: any, silent: any){
     var firstLine, lastLine, next, lastPos, found = false, token,
         pos = state.bMarks[start] + state.tShift[start],
         max = state.eMarks[start]
@@ -58,12 +58,13 @@ function music_block(state, start, end, silent){
     return true;
 }
 
-function abcjs_plugin(md, options) {
+function abcjs_plugin(md: any, options: any) {
     // let orange = vscode.window.createOutputChannel("Orange");
     // orange.appendLine('abcjs_plugin');
     // orange.appendLine(options);
+    options = options || {};
 
-    let blockRenderer = function(tokens, idx) {
+    let blockRenderer = function(tokens: any, idx: any) {
         // orange.appendLine(tokens[idx].content);
 
         let div = document.createElement('div');
